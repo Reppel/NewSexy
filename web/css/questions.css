@@ -1,0 +1,888 @@
+a{
+    text-decoration: none;
+}
+
+/* ask block */
+#ask_block{
+    position: fixed;
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    left: 416.5px;
+    top:100px;
+    border: 2px solid #2EC074;
+    border-radius: 10px;
+    z-index: 3;
+    display: none;
+}
+
+#ask_form{
+    position: relative;
+    width: 80%;
+    top:40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ask_title_text{
+    position: relative;
+    color: #333333;
+    font-family: "微软雅黑";
+}
+
+#input_ask_title{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    top:10px;
+    background-color: white;
+    border: 1px solid #2EC074;
+    border-radius: 3px;
+
+}
+
+#ask_description_text{
+    position: relative;
+    top:20px;
+    color: #333333;
+    font-family: "微软雅黑";
+}
+
+#textarea_ask_description{
+    position: relative;
+    top:10px;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    border: 1px solid #2EC074;
+    border-radius: 3px;
+    resize:none;
+}
+
+#cancel_ask_button{
+    position: relative;
+    top:30px;
+    left:230px;
+    width:70px;
+    height:35px;
+    background-color: #2EC074;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-family: "微软雅黑", "黑体", "Arial Unicode MS";
+}
+
+#cancel_ask_button:hover{
+    cursor: pointer;
+    background-color: springgreen;
+}
+
+#ask_button{
+    position: relative;
+    top:30px;
+    left:260px;
+    width:70px;
+    height:35px;
+    background-color: #2EC074;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-family: "微软雅黑", "黑体", "Arial Unicode MS";
+}
+
+#ask_button:hover{
+    cursor: pointer;
+    background-color: springgreen;
+}
+
+/*------------------*/
+
+
+
+.wrapper{
+    width:auto;
+    min-width:1333px;
+}
+
+/*navigation bar*/
+.navigation{
+    height:50px;
+    background-color: #2EC074;
+    position:fixed;
+    left:0px;
+    top:0px;
+    right:0px;
+    z-index: 1;
+}
+
+.nav_inner{
+    width:960px;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*logo*/
+#logo{
+    float: left;
+    color: white;
+    font-family: "Verdana";
+    font-size: larger;
+    line-height: 50px;
+}
+
+/*search & ask block*/
+#search_ask_block{
+    position: relative;
+    width:400px;
+    left:30px;
+    line-height: 50px;
+}
+
+
+/* search */
+#form_search{
+    position: relative;
+    width:400px;
+}
+
+#input_search{
+    position: relative;
+    height: 28px;
+    width:200px;
+    background-color: white;
+    border: 0px;
+    border-radius: 3px;
+    /*color:  #2EC074;*/
+}
+
+
+#button_search{
+    position: relative;
+    left:-32px;
+    top:5px;
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+    background-color: white;
+    background-image:url("../images/search.png");
+    color: white;
+    border: 0px;
+}
+
+/**html #button_search{*/
+    /*top:0px;*/
+    /*display:none;*/
+/*}*/
+
+#button_search:hover{
+   cursor: pointer;
+}
+
+
+/* ask button */
+#button_ask{
+    position: relative;
+    width:50px;
+    height: 30px;
+    line-height: 30px;
+    left:310px;
+    top:-47px;
+    background-color:mediumspringgreen;
+    border: 1px solid mediumspringgreen;
+    color:white;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+#button_ask:hover{
+    cursor: pointer;
+    background-color: springgreen;
+}
+
+
+/* menu bar */
+.menubar{
+    position: relative;
+    width:300px;
+    left:450px;
+    margin:0;
+    padding:0;
+    top: -100px;
+}
+
+.menu{
+    position: relative;
+    float: left;
+    line-height: 50px;
+    width: 70px;
+    /*top:-20px;*/
+    /*display: inline;*/
+    list-style-type: none;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}
+
+.menu > a{
+    color: white;
+}
+
+
+.menu:hover{
+    cursor: pointer;
+    background-color: mediumspringgreen;
+}
+
+
+/*user information block*/
+.user_info_block{
+    position: relative;
+    float: right;
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+    top:-100px;
+}
+
+
+.user_info_block:hover{
+    cursor: pointer;
+    background-color: mediumspringgreen;
+}
+
+.user_info_block:hover .user_submenubar{
+    /*display: block;*/
+    visibility: visible;
+}
+
+#user_head_image{
+    position: relative;
+    top:10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+/*.user_head_image > span{*/
+    /*line-height: 50px;*/
+/*}*/
+#username_text{
+    position: relative;
+    color: white;
+    margin-left: 15px;
+    font-size: medium;
+}
+
+
+/* submenu */
+.user_submenubar{
+    /*display: none;*/
+    visibility: hidden;
+    position: relative;
+    left:0px;
+    top:-17px;
+    padding: 0px;
+    background-color: #2EC074;
+    border: thin solid lightgreen;
+    /*border:  2px dashed white;*/
+    /*border-radius: 10px;*/
+}
+
+
+.user_submenu{
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: white;
+    /*border-bottom: 1px solid lightgreen;*/
+    border-bottom: 2px dashed white;
+}
+
+/*此处用于调整子菜单边框*/
+#my_exit{
+    border: 0px;
+}
+
+
+.user_submenu:hover{
+    cursor: pointer;
+    background-color:snow;
+    color: #2EC074;
+}
+
+.user_submenu > a{
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.user_submenu > a:hover{
+    color: #2EC074;
+}
+
+.user_submenu > a >img{
+    position: relative;
+    top:5px;
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+}
+
+/*-------------------------------*/
+
+/* body */
+.body{
+    position: relative;
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    left:167px;
+    top: 80px;
+    padding: 30px;
+    border: 3px dashed #2EC074;
+    border-radius: 10px;
+    float:left;
+}
+
+.main_body{
+    position: relative;
+    width:65% ;
+    float: left;
+
+}
+
+
+/*    question block
+------------------------*/
+h3{
+    color: #2EC074;
+}
+
+.question_block{
+    position: relative;
+}
+
+.question_content{
+    font-size: 14px;
+}
+
+.question_footer{
+    font-size: small;
+    color: gray;
+}
+
+
+.ask_username{
+    color: darkslategray;
+    font-weight: bold;
+}
+
+.ask_username:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*    answer block
+-----------------------*/
+
+.answer_block{
+    position: relative;
+    /*top:30px;*/
+}
+
+.answer_item_block{
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.answer_item_block > img{
+    position: relative;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+/*   answer user
+-------------------*/
+
+.answer_user_head{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    float: left;
+}
+
+.answer_user_head:hover{
+    cursor: pointer;
+}
+
+.answer_user > span{
+    position: relative;
+    top:5px;
+    font-size: 13px;
+}
+
+.answer_user > a{
+    color: black;
+}
+
+.answer_username{
+    position: relative;
+    left: 3px;
+    top:5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.answer_username:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* answer content */
+
+.answer_content{
+    position: relative;
+    top:20px;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+.answer_picture{
+    position: relative;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+
+.answer_footer {
+    position: relative;
+    /*float: right;*/
+    text-align: right;
+    color: gray;
+    font-size: small;
+}
+
+.answer_comment_text:hover{
+    cursor: pointer;
+    color: #333333;
+}
+
+
+/*   comments of answer
+---------------------------*/
+.comment_block{
+    position: relative;
+    /*height: 330px;*/
+    top:10px;
+    padding: 10px;
+    border: thin solid gray;
+    border-radius: 5px;
+    display: none;
+}
+
+/* triangle */
+.comment_block::before,
+.comment_block::after{
+    position:absolute;
+    content:"";
+    width:0;
+    height:0;
+    border:solid transparent 1px;
+    border-color: gray;
+}
+
+.comment_block::before{
+    color:gray;
+    border: solid 1px;
+    /*top:-38px;*/
+    /*left: 500px;*/
+    top:-10px;
+    left:435px;
+    border-top: transparent;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    border-bottom: 10px solid;
+}
+
+.comment_block::after{
+    color:#ffffff;
+    /*top:-183px;*/
+    /*left: 500px;*/
+    top:-8px;
+    left:435px;
+    border: solid 1px;
+    border-top: transparent;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    border-bottom: 10px solid;
+}
+
+
+/*   comment item
+--------------------- */
+
+.comment_item_block{
+    position: relative;
+    marigin-top:20px;
+    margin-bottom: 20px;
+}
+
+.comment_user_head{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    float: left;
+}
+
+.comment_user_head:hover{
+    cursor: pointer;
+}
+
+.comment_username{
+    position: relative;
+    left:3px;
+    top:5px;
+    color: #2EC074;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.comment_username:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.comment_content{
+    position: relative;
+    top:10px;
+    left:33px;
+    font-size: 14px;
+}
+
+.comment_footer{
+    position: relative;
+    top:5px;
+    left:33px;
+    color: gray;
+    font-size: small;
+}
+
+.no_answer{
+    position: relative;
+    top:10px;
+    font-size: 14px;
+    /*font-family: "微软雅黑", "黑体", "Arial Unicode MS";*/
+    color:#333333;
+}
+
+
+hr{
+    position: relative;
+    width:100%;
+}
+
+
+/*    send comment form
+---------------------------*/
+.form_comment{
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.send_comment_block{
+    position: relative;
+    height: 110px;
+    top:20px;
+    /*margin-left: 20px;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+
+
+.comment_input_text{
+    position: relative;
+    width: 99%;
+    height:25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comment_button_submit{
+    position: relative;
+    height: 30px;
+    width: 70px;
+    top:20px;
+    float: right;
+    background-color: #2EC074;
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+}
+
+.comment_button_submit:hover{
+    cursor: pointer;
+    background-color:springgreen ;
+}
+
+
+/*   submit answer block
+---------------------------*/
+
+#submit_answer_block{
+    position: relative;
+    margin-top: 50px;
+    height: 250px;
+}
+
+#submit_answer_head{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    float: left;
+}
+
+
+#submit_answer_user > span{
+    position: relative;
+    top:5px;
+    font-size: 13px;
+}
+
+#submit_answer_username{
+    position: relative;
+    left:3px;
+    top:5px;
+    color: #2EC074;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#submit_answer_textarea{
+    position: relative;
+    width: 99%;
+    margin-top: 10px;
+    border: 1px solid gray;
+}
+
+#submit_answer_button {
+    position: relative;
+    height: 30px;
+    width: 70px;
+    margin-top: 10px;
+    float: right;
+    background-color: #2EC074;
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+}
+
+#submit_answer_button:hover{
+    cursor: pointer;
+    background-color:springgreen ;
+}
+
+#insert_picture_button{
+    position: relative;
+    top:9.5px;
+    /*background-image: url("../images/picture0.png");*/
+    background-color: #ffffff;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    border: none;
+}
+
+#insert_picture_button:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+#upload_picture{
+    position: relative;
+    display: none;
+}
+
+
+#load_more_block{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 200px;*/
+    top:15px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: beige;
+    border: gray;
+}
+
+
+#load_more{
+    position: relative;
+    font-size: small;
+    color: #333333;
+}
+
+#load_more:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/*--------------------------------*/
+
+
+
+/*   right side
+------------------*/
+.right_side{
+    position: relative;
+    width: 28%;
+    /*margin-top: -1600px;*/
+    float: right;
+}
+
+
+/* hot question & hot user block */
+
+#hot_question_block{
+    position: relative;
+    margin-bottom: 20px;
+    /*border-left: 1px dotted darkgray;*/
+    /*padding-left: 30px;*/
+}
+
+#hot_user_block{
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+.hot_text{
+    position:relative;
+    color:#2EC074;
+    font-family: "微软雅黑";
+    font-weight: bold;
+
+}
+
+
+/*    hot question
+------------------------*/
+.hot_question_list{
+    position: relative;
+    list-style-type: none;
+    color: #333333;
+    /*color: #222222;*/
+    font-family: "微软雅黑";
+    margin-top:10px;
+    top:5px;
+    font-size: 15px;
+}
+
+
+.hot_question_list > a{
+    color: #333333;
+}
+
+.hot_question_list > a:hover{
+    text-decoration: underline;
+    color:indianred;
+    cursor: pointer;
+}
+
+
+/*     hot user
+----------------------*/
+
+.hot_user_block{
+    position: relative;
+    width: 100%;
+}
+
+.hot_user_item{
+    position: relative;
+    height: 50px;
+    padding-bottom: 10px;
+
+    /*margin-top: 10px;*/
+    /*margin-bottom: 20px;*/
+}
+
+.hot_user_head{
+    position: relative;
+    top:10px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    float: left;
+}
+
+.hot_user_head:hover{
+    cursor: pointer;
+}
+
+.hot_username{
+    position: relative;
+    left: 3px;
+    top:5px;
+    color:#222222;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    float: left;
+}
+
+.hot_username:hover{
+    text-decoration: underline;
+    color:indianred;
+    cursor: pointer;
+}
+
+.hot_user_sign{
+    position: relative;
+    width: 235px;
+    top:-5px;
+    left:32px;
+    color:#333333;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    float: left;
+    clear:both;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+
+hr{
+    position: relative;
+    width:100%;
+}
+
+
+/* footer */
+#footer{
+    position: relative;
+    top:20px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "微软雅黑";
+    font-size: small;
+    color: gray;
+
+}
+

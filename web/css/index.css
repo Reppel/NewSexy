@@ -1,0 +1,250 @@
+.content{
+    width:auto;
+    min-width:1333px;
+}
+
+/* head */
+.head{
+    background-color:#2EC074;
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* introduction block */
+.introduction_block{
+    position:relative;
+    width:300px;
+    margin-left:200px;
+    top:100px;
+    /*left:130px ;*/
+    /*top: 100px;*/
+}
+
+/* login block */
+.login_block{
+    position:relative;
+    width:250px;
+    margin-left: 790px;
+    bottom: 50px;
+    display:block;
+}
+
+/*register block*/
+.register_block{
+    position:relative;
+    width:250px;
+    margin-left: 790px;
+    bottom: 90px;
+    display:none;
+}
+
+
+/* logo & description */
+#logo{
+    position:relative;
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: "Verdana";
+}
+
+#description{
+    position: relative;
+    color:whitesmoke;
+    font-family: "Tahoma";
+    top:15px;
+    margin-left:3em;
+}
+
+/* login table */
+input{
+    background-color: white;
+    border:1px dotted #99cccc;
+    border-style: none;
+    width: 200px;
+    height: 25px;
+    margin:5px;
+    /*color:#2EC074;*/
+    font-family: "微软雅黑";
+    padding-left: 3px;
+}
+
+
+#button_login{
+    background-color: #2EC074;
+    border: 2px solid white;
+    color: white;
+    width: 203px;
+    font-weight: bold;
+
+}
+
+
+#button_register{
+    background-color: #2EC074;
+    border: 2px solid white;
+    color: white;
+    width: 203px;
+    font-weight: bold;
+}
+
+#button_login:hover{
+    cursor: pointer;
+    background-color: springgreen;
+}
+
+#button_register:hover{
+    cursor: pointer;
+    background-color: springgreen;
+}
+
+#register_text{
+     position:relative;
+     color:#FFFFCC;
+     font-family: "微软雅黑";
+     font-size: medium;
+     left:125px;
+     top:35px;
+ }
+
+
+#login_text{
+    position:relative;
+    color:#FFFFCC;
+    font-family: "微软雅黑";
+    font-size: medium;
+    left:125px;
+    top:45px;
+}
+
+#register_text:hover{
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#login_text:hover{
+    cursor: pointer;
+    color: #ffffff;
+}
+
+/* error tip */
+.error_text{
+    position: relative;
+    width:219px;
+    height:25px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffff66;
+    display: none;
+}
+
+/*----------------------------*/
+
+/* body */
+
+.body{
+    width:100%;
+}
+
+
+/* inner body */
+
+.inner_body {
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    border:3px dashed #2EC074;
+    border-radius: 10px;
+    margin-top:50px;
+    padding: 80px;
+}
+
+/* hot user block */
+
+.hot_users{
+    position:relative;
+    height:50%;
+}
+
+.hot_text{
+    position:relative;
+    color:indianred;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    top: 50px;
+}
+
+hr{
+    margin-top:55px;
+}
+
+
+.hot_user_image{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    margin-top: 30px;
+}
+
+.hot_user_image > a > img{
+     width:100px;
+     height: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.hot_user_image > a > img:hover{
+    cursor:pointer;
+    box-shadow: 0 0 25px indianred;
+}
+
+
+/* hot question block */
+
+.hot_questions > li{
+    position: relative;
+    list-style-type: none;
+    /*color: #333333;*/
+    color: #222222;
+    font-family: "微软雅黑";
+    margin:10px;
+    font-size: 15px;
+}
+
+.hot_questions > li > a{
+    text-decoration: none;
+    color: #222222;
+}
+
+
+.hot_questions > li > a:hover{
+    text-decoration: underline;
+    color:indianred;
+    cursor: pointer;
+}
+
+.no_hot{
+    position: relative;
+    top:10px;
+    font-family: "微软雅黑", "黑体", "Arial Unicode MS";
+    color:#333333;
+}
+
+
+/*footer*/
+#footer{
+    position: relative;
+    top:50px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "微软雅黑";
+    font-size: small;
+    color: gray;
+
+}
+

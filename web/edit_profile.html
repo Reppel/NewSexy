@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>New Sexy - Edit</title>
+    <link rel="stylesheet" href="css/edit_profile.css">
+    <script type="text/javascript" src="javascript/edit_profile.js" defer="defer" charset="utf-8"></script>
+    <script src="javascript/lib/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+<div id="send_meassage_block">
+    <form id="message_form" method="post">
+        <textarea id="textarea_message" form="message_form"></textarea>
+        <input type="button" id="cancel_message_button" value="取消发送"/>
+        <input type="button" id="send_message_button" value="发送私信"/>
+    </form>
+</div>
+<div class="wrapper">
+    <div class="navigation">
+        <div class="nav_inner">
+            <a id="logo">
+                New Sexy
+            </a>
+
+            <div id="search_ask_block" >
+                <form name="form_search" id="form_search" action="" method="get">
+                    <input type="text" name="search" id="input_search"  placeholder="搜索问题或用户"/>
+                    <input type="button" id="button_search" value="" title="搜索"/>
+                </form>
+                <button id="button_ask">提问</button>
+            </div>
+
+            <div class="menubar">
+                <li class="menu"><a href="index.html">首页</a></li>
+                <li class="menu"><a href="#">话题</a></li>
+                <li class="menu"><a href="#">发现</a></li>
+            </div>
+            <div class="user_info_block">
+                <a href="user_profile.html">
+                    <img src="images/4.jpg" id="user_head_image"/>
+                    <span id="username_text">神秘人</span>
+                </a>
+                <ul class="user_submenubar">
+                    <li class="user_submenu" id="my_homepage">
+                        <a href="user_profile.html">
+                            <img src="images/user.png"/>
+                            <span>我的主页</span>
+                        </a>
+                    </li>
+                    <li class="user_submenu" id="my_message">
+                        <a href="#">
+                            <img src="images/mail.png"/>
+                            <span>私信</span>
+                        </a>
+                    </li>
+                    <li class="user_submenu" id="my_settings">
+                        <a href="#">
+                            <img src="images/setting.png"/>
+                            <span>设置</span>
+                        </a>
+                    </li>
+                    <li class="user_submenu" id="my_exit">
+                        <a href="#">
+                            <img src="images/exit.png"/>
+                            <span>退出</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="body">
+        <form name="edit_form" id="edit_form" action="" method="post">
+            <div id="edit_head_block">
+                <image id="edit_head_image" src="images/0.jpg"/>
+            </div>
+            <div id="edit_head_div"><a id="edit_head_button" title="建议上传正方形图片作为头像">选择图片</a></div>
+            <input id="file_upload" type="file"/>
+            <table id="edit_table">
+                <tr>
+                    <td><span class="edit_text">邮&nbsp;箱：</span><span class="edit_content">abc@163.com</span></td>
+                </tr>
+                <tr>
+                    <td><span class="edit_text">用户名：</span><span class="edit_content">一个用户</span></td>
+                </tr>
+                <tr>
+                    <td><span class="edit_text">原密码：</span><input class="edit_input" id="old_password" type="password" placeholder="大小写字母、数字、下划线(6-16字符)"/>
+                </tr>
+                <tr>
+                    <td><span class="edit_text">新密码：</span><input class="edit_input" id="new_password" type="password" placeholder="大小写字母、数字、下划线(6-16字符)"/></td>
+                </tr>
+                <tr>
+                    <td><span class="edit_text">签&nbsp;名：</span></td>
+                </tr>
+            </table>
+            </td>
+            <div id="edit_sign_block">
+                <textarea name="edit_sign_area" id="edit_sign_area"></textarea>
+            </div>
+            <input id="edit_submit_button" type="button" value="保存修改">
+        </form>
+        <div class="error_div" id="old_error_div"><span class="error_text" id="old_password_error">* 格式错误！</span></div>
+        <div class="error_div" id="new_error_div"><span class="error_text" id="new_password_error">* 密码错误！</span></div>
+
+    </div>
+
+</div>
+<div id="footer">CopyRight©  2015 &nbsp;  New Sexy</div>
+
+</body>
+</html>

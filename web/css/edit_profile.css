@@ -1,0 +1,542 @@
+a{
+    text-decoration: none;
+}
+
+/* ask block */
+#ask_block{
+    position: fixed;
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    left: 416.5px;
+    top:100px;
+    border: 2px solid #2EC074;
+    border-radius: 10px;
+    z-index: 3;
+    display: none;
+}
+
+#ask_form{
+    position: relative;
+    width: 80%;
+    top:40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ask_title_text{
+    position: relative;
+    color: #333333;
+    font-family: "微软雅黑";
+}
+
+#input_ask_title{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    top:10px;
+    background-color: white;
+    border: 1px solid #2EC074;
+    border-radius: 3px;
+
+}
+
+#ask_description_text{
+    position: relative;
+    top:20px;
+    color: #333333;
+    font-family: "微软雅黑";
+}
+
+#textarea_ask_description{
+    position: relative;
+    top:10px;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    border: 1px solid #2EC074;
+    border-radius: 3px;
+    resize:none;
+}
+
+#cancel_ask_button{
+    position: relative;
+    top:30px;
+    left:230px;
+    width:70px;
+    height:35px;
+    background-color: #2EC074;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-family: "微软雅黑", "黑体", "Arial Unicode MS";
+}
+
+#cancel_ask_button:hover{
+    cursor: pointer;
+    background-color: springgreen;
+}
+
+#ask_button{
+    position: relative;
+    top:30px;
+    left:260px;
+    width:70px;
+    height:35px;
+    background-color: #2EC074;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-family: "微软雅黑", "黑体", "Arial Unicode MS";
+}
+
+#ask_button:hover{
+    cursor: pointer;
+    background-color: springgreen;
+}
+
+/*------------------*/
+
+
+.wrapper{
+    width:auto;
+    min-width:1333px;
+}
+
+/*navigation bar*/
+.navigation{
+    height:50px;
+    background-color: #2EC074;
+    position:fixed;
+    left:0px;
+    top:0px;
+    right:0px;
+    z-index: 1;
+}
+
+.nav_inner{
+    width:960px;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*logo*/
+#logo{
+    float: left;
+    color: white;
+    font-family: "Verdana";
+    font-size: larger;
+    line-height: 50px;
+}
+
+/*search & ask block*/
+#search_ask_block{
+    position: relative;
+    width:400px;
+    left:30px;
+    line-height: 50px;
+}
+
+#form_search{
+    position: relative;
+    width:400px;
+    /*left:0px;*/
+}
+
+#input_search{
+    position: relative;
+    height: 28px;
+    width:200px;
+    background-color: white;
+    border: 0px;
+    border-radius: 3px;
+}
+
+
+#button_search{
+    position: relative;
+    left:-32px;
+    top:5px;
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+    background-color: white;
+    background-image:url("../images/search.png");
+    color: white;
+    border: 0px;
+}
+
+#button_search:hover{
+    cursor: pointer;
+}
+
+#button_ask{
+    position: relative;
+    width:50px;
+    height: 30px;
+    line-height: 30px;
+    left:310px;
+    top:-47px;
+
+    /*background-color:white ;*/
+    /*border: 3px solid white;*/
+    /*color: #2EC074;*/
+
+    background-color:mediumspringgreen;
+    border: 1px solid mediumspringgreen;
+    /*border: 1px solid white;*/
+    color:white;
+    font-size: 15px;
+    /*font-weight: bold;*/
+
+    border-radius: 3px;
+}
+
+#button_ask:hover{
+    cursor: pointer;
+    background-color: springgreen;
+}
+
+
+/*menubar*/
+.menubar{
+    position: relative;
+    width:300px;
+    left:450px;
+    margin:0;
+    padding:0;
+    top: -100px;
+}
+
+.menu{
+    position: relative;
+    float: left;
+    line-height: 50px;
+    width: 70px;
+    /*top:-20px;*/
+    /*display: inline;*/
+    list-style-type: none;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}
+
+.menu > a{
+    color: white;
+}
+
+.menu:hover{
+    cursor: pointer;
+    background-color: mediumspringgreen;
+}
+
+
+/*user information block*/
+.user_info_block{
+    position: relative;
+    float: right;
+    height: 50px;
+    width: 150px;
+    line-height: 50px;
+    top:-100px;
+}
+
+
+.user_info_block:hover{
+    cursor: pointer;
+    background-color: mediumspringgreen;
+}
+
+.user_info_block:hover .user_submenubar{
+    /*display: block;*/
+    visibility: visible;
+}
+
+#user_head_image{
+    position: relative;
+    top:10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+/*.user_head_image > span{*/
+/*line-height: 50px;*/
+/*}*/
+#username_text{
+    position: relative;
+    color: white;
+    margin-left: 15px;
+    font-size: medium;
+}
+
+
+/*submenu*/
+.user_submenubar{
+    /*display: none;*/
+    visibility: hidden;
+    position: relative;
+    left:0px;
+    top:-17px;
+    padding: 0px;
+    background-color: #2EC074;
+    border: thin solid lightgreen;
+    /*border:  2px dashed white;*/
+    /*border-radius: 10px;*/
+}
+
+
+.user_submenu{
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: white;
+    /*border-bottom: 1px solid lightgreen;*/
+    border-bottom: 2px dashed white;
+}
+
+#my_exit{
+    border: 0px;
+}
+
+
+.user_submenu:hover{
+    cursor: pointer;
+    background-color:snow;
+    color: #2EC074;
+}
+
+.user_submenu > a{
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.user_submenu > a:hover{
+    color: #2EC074;
+}
+
+.user_submenu > a >img{
+    position: relative;
+    top:5px;
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+}
+
+/*-----------------------*/
+
+/* body */
+#body{
+    position:relative;
+    width:50%;
+    top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px dashed #2EC074;
+    border-radius: 10px;
+}
+
+/* form */
+#edit_form{
+    position: relative;
+    height: 850px;
+}
+
+
+#edit_head_block{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    top:30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid lightgray;
+    border-radius: 150px;
+    background-color: beige;
+}
+
+
+#edit_head_image{
+    position: relative;
+    height:200px;
+    width:200px;
+    left: 50px;
+    top:50px;
+    overflow: hidden;
+}
+
+#edit_head_div{
+    position: relative;
+    height:30px;
+    line-height: 30px;
+    width:302px;
+    top:45px;
+    /*left: 182px;*/
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #2EC074;
+}
+
+#edit_head_button{
+    /*position: relative;*/
+    /*height:30px;*/
+    /*width:302px;*/
+    /*top:45px;*/
+    /*left: 182px;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*background-color: white;*/
+    /*border: 2px solid #2EC074;*/
+    display: block;
+    font-family: "微软雅黑", "黑体", "Arial Unicode MS";
+    color: #2Ec074;
+    font-weight: bold;
+
+}
+
+#file_upload{
+    position: relative;
+    top:65px;
+    left: 300px;
+    display: none;
+}
+
+#edit_head_button:hover{
+    cursor: pointer;
+    background-color: #2EC074;
+    color: white;
+
+}
+
+
+#edit_table{
+    position: relative;
+    width:300px;
+    height: 240px;
+    top:70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.edit_text{
+    position: relative;
+    /*color: #333333;*/
+    color:#2EC074;
+    font-weight: bold;
+}
+
+.edit_content{
+    position: relative;
+    color: #333333;
+    /*color: #2EC074;*/
+}
+
+.edit_input{
+    position: relative;
+    width: 220px;
+    height: 20px;
+    background-color: white;
+    /*border: 1px solid #2Ec074;*/
+}
+
+.error_div{
+    width: 150px;
+    height: 20px;
+}
+
+#old_error_div{
+    position: relative;
+    top:-343px;
+    left: 490px;
+}
+
+#new_error_div{
+    position: relative;
+    top:-312px;
+    left:490px;
+}
+
+
+.error_text{
+    /*position: relative;*/
+    /*top:-25px;*/
+    /*left:300px;*/
+    color:indianred;
+    font-size: small;
+    visibility: hidden;
+    /*display: none;*/
+}
+
+/*#old_password_error{*/
+    /*position: relative;*/
+    /*top:-343px;*/
+    /*left: 490px;*/
+/*}*/
+
+/*#new_password_error{*/
+    /*position: relative;*/
+    /*top:-292px;*/
+    /*left:406px;*/
+/*}*/
+
+
+#edit_sign_block{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    top:60px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#edit_sign_area{
+    position: relative;
+    width: 300px;
+    height:100px;
+    resize: none;
+}
+
+#edit_submit_button{
+    position: relative;
+    width:100px;
+    height:35px;
+    left:285px;
+    top:70px;
+    background-color: #2EC074;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    font-family: "微软雅黑", "黑体", "Arial Unicode MS";
+}
+
+#edit_submit_button:hover{
+    cursor: pointer;
+    background-color: springgreen;
+
+}
+
+#footer{
+    position: relative;
+    top:115px;
+    width: 200px;
+    /*margin-bottom: 20px;*/
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "微软雅黑";
+    font-size: small;
+    color: gray;
+
+}
+
+
